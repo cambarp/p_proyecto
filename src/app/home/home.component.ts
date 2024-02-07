@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from '../header/header.component';
+import { CuerpoComponent } from '../cuerpo/cuerpo.component';
+import { PiePaginaComponent } from '../pie-pagina/pie-pagina.component';
+
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet,HeaderComponent,CuerpoComponent,PiePaginaComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -1,21 +1,22 @@
-import { NgModule } from '@angular/core';
-import { Routes,RouterModule} from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { CuerpoComponent } from './cuerpo/cuerpo.component';
-import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
-
-    { path: 'header', component: HeaderComponent },
-    { path: 'cuerpo', component: CuerpoComponent},
-    { path: 'quienes_somos', component: QuienesSomosComponent}
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent }
 ];
-@NgModule({
-    imports: [
-      RouterModule.forRoot(routes)
-    ],
-    exports :[RouterModule]
-  })
 
-  export class AppModule { }
+@NgModule({
+  
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+
+
+
+

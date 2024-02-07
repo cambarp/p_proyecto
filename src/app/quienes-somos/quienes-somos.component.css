@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 50px;
+}
+
+.quienes-somos {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quienes-somos h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.quienes-somos p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
