@@ -1,0 +1,13 @@
+.error_vista{
+    width: 80%;
+    margin: auto;
+    padding: 4.5vw;
+    text-decoration: dashed;
+}
+.error_vista__img{
+    width: 80%;
+    margin: auto;
+}
+.error_vista__img img {
+    box-shadow: inset 0px 0px;
+}
