@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
-import { ElementRef, ViewChild} from '@angular/core';
+
 
 
 @Component({
@@ -11,6 +11,5 @@ import { ElementRef, ViewChild} from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
   
 }

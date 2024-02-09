@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AgregarCompraService } from '../agregar-compra.service';
+
 
 @Component({
   selector: 'app-cuerpo',
@@ -8,5 +10,6 @@ import { Component } from '@angular/core';
   styleUrl: './cuerpo.component.css'
 })
 export class CuerpoComponent {
+  constructor(public Agregar:AgregarCompraService){}
 
 }
