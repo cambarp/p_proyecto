@@ -1,0 +1,14 @@
+body{
+    background-color:#BFC9CA;
+}
+.banner{
+    background-image: url("../../../assets/img/mujer_artesana-removebg-preview.png");
+    background-color:#BFC9CA;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15vw ;
+    opacity: 0.7;
+}
+.banner-content h2{
+    color: #33140E ;
+}

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProductComponent } from '../product/product.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-contenido',
