@@ -38,23 +38,24 @@
 
 .destacados h2 {
     font-size: 24px;
+    color:whitesmoke;
     margin-bottom: 20px;
 }
 
 .mosaico {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columnas automáticas con un mínimo de 200px */
-    gap: 28px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr)); /* Columnas automáticas con un mínimo de 200px */
+    gap: 23px; /* Espacio entre las imágenes */
 }
 
 .mosaico img {
-    width: 100%; /* Las imágenes ocupan todo el espacio disponible */
-    height: auto; /* Altura automática para mantener la proporción */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
-    transition: transform 0.3s ease; /* Transición suave */
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
 }
 
 .mosaico img:hover {
-    transform: translateY(-5px); /* Efecto de levantamiento al pasar el cursor */
+    transform: translateY(-5px); 
 }
