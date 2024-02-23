@@ -1,32 +1,84 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 <div class="general">
     <section class="banner">
-    
+        <div class="banner__img">
+            <img src="../../../assets/img/sombrero_fondo.png" alt="" class="img__inicio">
+        </div>
+        <section class="banner-content">
+            <h2>Descubre nuestras increíbles mochilas artesanales</h2>
+            <p>Explora nuestra colección única de mochilas, cuidadosamente diseñadas y tejidas a mano por artesanos expertos.</p>
+            <div class="button">
+                <button class="productos">
+                    Ver colección
+                </button>
+            </div>
+            <button class="nav-item" (click)="toggleComponente()">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <span class="p_destacados">Productos Destacados</span>
+        </section>
+
     </section>
-    <div class="banner-content">
-        <h2>Descubre nuestras increíbles mochilas artesanales</h2>
-        <p>Explora nuestra colección única de mochilas, cuidadosamente diseñadas y tejidas a mano por artesanos expertos.</p>
-        <button class="productos">
-            Ver colección
-        </button>
-    </div>
-    <section class="destacados">
-        <h2>Productos destacados</h2> 
+    
+    <section class="destacados" id="Productos_des" *ngIf="mostrarDestacados" >
         <div class="mosaico">
-            <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
-            <img src="../../../assets/img/Chinchorro-wayuu-sencillo.png" alt="Producto 2">
-            <img src="../../../assets/img/Csencillo-G001.jpg" alt="Producto 3">
-            <img src="../../../assets/img/sombrero-wayuu-artesanias-colombia.jpg" alt="Producto 3">
-            <img src="../../../assets/img/Sombreros-Wayuu-1024x760.jpg" alt="Producto 3">
-            <img src="../../../assets/img/historia-de-vida-3-gary-gonzalez-artesanias-colombia-2.jpg" alt="Producto 3">
-            <img src="../../../assets/img/Pulsera-o-Manilla-Wayuu-GUARTA-Colombia-Espana-Italia-Estados-Unidos-Europa-Cali-Medellin-Bogota-Cartagena-Barranquilla-y-Pasto.webp" alt="Producto 3">
-            <img src="../../../assets/img/Manillas-originales-wayuu.jpg" alt="Producto 3">
-            <img src="../../../assets/img/sombrero-wayuu-artesanias-colombia.jpg" alt="Producto 3">
-            <img src="../../../assets/img/31968_31968_usando-herramientas-google-artesanias-colobmia-2019-g.jpg" alt="Producto 3">
-            <img src="../../../assets/img/Csencillo-G001 (1).jpg" alt="Producto 3">
-            <img src="../../../assets/img/images (8).jpg" alt="Producto 3">
+            <div class="card">
+                <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
+                <div class="overlay">
+                    <h3>Producto 1</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
+                <div class="overlay">
+                    <h3>Producto 1</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
+                <div class="overlay">
+                    <h3>Producto 1</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
+                <div class="overlay">
+                    <h3>Producto 1</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
+                <div class="overlay">
+                    <h3>Producto 1</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
+                <div class="overlay">
+                    <h3>Producto 1</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
+                <div class="overlay">
+                    <h3>Producto 1</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../../assets/img/Carmen-palmar-artesanias-colombia-2020-1.jpg" alt="Producto 1">
+                <div class="overlay">
+                    <h3>Chinchorro wayuu </h3>
+                    <p>valor :3.45 <span>unidades vendidas 12</span></p>
+                    <p>valor :3.45 <span>unidades vendidas 12</span></p>
+                    <p>valor :3.45 <span>unidades vendidas 12</span></p>
+                </div>
+            </div>
+            
+            
         </div>
 
-        <app-form-prueba></app-form-prueba>
+
     </section>
 
     

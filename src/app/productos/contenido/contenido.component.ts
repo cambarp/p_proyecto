@@ -1,15 +1,21 @@
 import { Component } from '@angular/core';
-import { ProductComponent } from '../product/product.component';
-import { RouterOutlet } from '@angular/router';
-import { FormPruebaComponent } from '../../form-prueba/form-prueba.component';
+import { style } from '@angular/animations';
+
 
 @Component({
   selector: 'app-contenido',
   standalone: true,
-  imports: [FormPruebaComponent],
+  imports: [],
   templateUrl: './contenido.component.html',
   styleUrl: './contenido.component.css'
 })
 export class ContenidoComponent {
 
+  mostrarDestacados: boolean = false;
+
+  toggleComponente() {
+    this.mostrarDestacados = !this.mostrarDestacados;
+  }
+
 }
+

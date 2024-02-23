@@ -4,27 +4,41 @@
     box-sizing: border-box;
 }
 .navbar{
-    height: 6vw;
-    padding: 1.5vw;
-    box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5vw;
+    background-image: linear-gradient(100deg,#d8e1d8,#808081,#f7ecec ) ;
+
 }
-.img{
-    width: 5.5vw;
-    height: 4.4vw;
+.navbar-nav{
+    display: flex;
+    gap: 2.5vw;
+}
+.collapse{
+    display: flex;
+    justify-content: space-between;
+}
+.container-fluid{
+    display: flex ;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .btn-outline-success{
     padding: 0.3vw 0.7vw;
     color: whitesmoke;
-    background-image: linear-gradient(140deg,#a2ee9c,#626264,#f7ecec ) ;
     transition: .3s;
 }
 .btn-outline-success :hover{
     scale: ();
 }
+.nav-item{
+    list-style: none;
+}
 .nav-item a {
-    font-size: 1.3vw;
+    font-size: 1.7vw;
     text-decoration: none;
-    color: #333;
+    font-weight: 400;
+    color: #050505;
     position: relative;
   transition: color 0.3s, transform 0.3s;
 }
@@ -35,7 +49,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #a2ee9c;
+    background-color: #4af03e;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -87,4 +101,10 @@
 .custom-btn:hover {
     background-color: #0d0c0c;
     transform: scale(1.05);
+}
+
+.navbar__redes{
+    display: flex;
+    gap: 1.5vw;
+    width: 25%;
 }
