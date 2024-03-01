@@ -1,9 +1,9 @@
 <form [formGroup]="Grupof" (ngSubmit)="getPrueba()"  >
     <label >Nombre :</label>
-    <input type="text" id="nombre" formControlName="nombre" placeholder="">
+    <input type="text" id="nombre" formControlName="nombre" [ngModel="nombre"] placeholder="">
     <label>Correo :</label>
     <input type="email" id="correo" FormControlName="correo" placeholder="">
     <label >Nombre_usurio :</label>
     <input type="text" id="nombre_usuario" FormControlName="nombre_usuario" placeholder="">
-    <button type="submit"  >Recojer</button>
+    <button type="submit" (click)="mostrarmensaje()" >Recojer</button>
 </form>
